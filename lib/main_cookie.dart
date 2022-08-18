@@ -1,9 +1,9 @@
-import 'package:flavour_example/flavor_config.dart';
-import 'package:flavour_example/main_comom.dart';
+import 'package:flutter_flavor_whitelabel/flavor_config.dart';
+import 'package:flutter_flavor_whitelabel/main_commom.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  mainComom(
+  mainCommom(
     FlavorConfig()
       ..appTitle = "Munchy Crunchy"
       ..imageLocation = "assets/images/munchy_crunchy.jpg"

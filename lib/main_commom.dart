@@ -1,4 +1,4 @@
-import 'package:flavour_example/flavor_config.dart';
+import 'package:flutter_flavor_whitelabel/flavor_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -8,7 +8,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 ///
 
 var flavorConfigProvider;
-void mainComom(FlavorConfig config) {
+void mainCommom(FlavorConfig config) {
   // like bloc provider
   flavorConfigProvider = StateProvider((ref) => config);
 
