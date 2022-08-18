@@ -1,11 +1,8 @@
-# Flavor Tutorial for Flutter Explained
-[![YouTube Badge](https://img.shields.io/static/v1?label=YouTube&message=Subscribe&color=red&style=flat-square&logo=youtube&logoColor=red)](https://youtube.com/c/flutterexplained?sub_confirmation=1)
-[![Twitch Badge](https://img.shields.io/static/v1?label=Twitch&message=Follow&color=violet&style=flat-square&logo=twitch&logoColor=violet)](https://www.twitch.tv/maxflutter)
-[![Flutter Explained](https://img.shields.io/static/v1?label=Homepage&message=FlutterExplained&color=blue&style=flat-square)](https://flutter-explained.dev/)
+# Flutter Flavor Studyng Project
+Please, follow the commit history to see a step by step.
 
-In this repository we collect everything that is related to Flavors.
+This project was made following this great Tutorial! [Flutter Flavors - Tutorial](https://www.youtube.com/watch?v=4Y7WaeU3P60&ab_channel=FlutterExplained)
 
-[Flutter Flavors - Live Stream](https://www.youtube.com/watch?v=nW2F4ao7gEM)
 
 ## Getting Started
 This project is build with Flavors in order to start the different flavors.
