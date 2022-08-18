@@ -33,6 +33,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # this is a package to adds different app icon accordingly with the flavor
+  # we must create a flutter_launcher_icons-<FLAVOR NAME>.yaml on root folder for each flavor
+  # and then run flutter pub run flutter_launcher_icons:main -f flutter_launcher_icons* - (this is on tools folder)
+  # this will generate all the needed size icons for our apps - And it's a dev dependency!
+  # For Android, is just it, we have all the app icons setted! But for IOS we need to go to Xcode.
+  # So Actually, this dependency here, generates all the icons sizes for IOS and Android
   flutter_launcher_icons: ^0.8.1
 
 # For information on the generic Dart part of this file, see the
