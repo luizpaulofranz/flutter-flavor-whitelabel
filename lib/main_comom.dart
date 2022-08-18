@@ -2,11 +2,16 @@ import 'package:flavour_example/flavor_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-var flavorConfigProvider = StateProvider(
-  (ref) => FlavorConfig(appTitle: "Flavor Tutorial"),
-);
+/// This is our Comom Main file, this one will call the flavor mains
 
-void main() {
+/// Dart flavors will call schemes in IOS - We have to set it up there.
+///
+
+var flavorConfigProvider;
+void mainComom(FlavorConfig config) {
+  // like bloc provider
+  flavorConfigProvider = StateProvider((ref) => config);
+
   runApp(
     ProviderScope(child: MyApp()),
   );
