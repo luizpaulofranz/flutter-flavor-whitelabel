@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -40,12 +40,28 @@ android {
         versionName flutterVersionName
     }
 
-    // TODO: Add flavorDimensions (app)
-    // TODO: Add producFlavors (cookie, coffee)
-    // TODO: Create folder cookie and folder coffee in "app/src"
-    // TODO: Create a strings.xml file in "res/values"
-    // TODO: Create a new folder in app/src/{cookie / coffee}/res/values
-    // TODO: Create a strings.xml file in "app/src/{cookie / coffee)/res/values"
+
+    // HERE ARE ANDROID FLAVOR CONFIGS
+    flavorDimensions "app"
+
+    productFlavors {
+
+        cookie {
+            dimension "app"
+            applicationId "dev.flutterexplained.flavour_example.cookie"
+            versionCode 1
+            versionName "1.0"
+        }
+
+        coffee {
+            dimension "app"
+            applicationId "dev.flutterexplained.flavour_example.coffee"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+    // END ANDROID FLAVOR CONFIGS
+
     buildTypes {
         release {
             signingConfig signingConfigs.debug
